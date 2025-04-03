@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aarav Prawin – Resume</title>
+  <style>
+    /* Base resets */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      line-height: 1.4;
+      color: #232324;
+    }
+    a { color: #5a0aef; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #444;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    header p.contact {
+      margin: 5px 0;
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* Layout: two columns */
+    .main {
+      display: flex;
+      gap: 20px;
+    }
+    /* Left sidebar */
+    .sidebar {
+      width: 30%;
+      border-right: 2px solid #444;
+      padding-right: 20px;
+    }
+    .sidebar section {
+      margin-bottom: 20px;
+    }
+    .sidebar h2 {
+      font-size: 1.2em;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.95em;
+    }
+    .sidebar li {
+      margin-bottom: 5px;
+    }
+
+    /* Right content area */
+    .content {
+      width: 70%;
+      padding-left: 20px;
+    }
+    .content section {
+      margin-bottom: 25px;
+    }
+    .content h2 {
+      font-size: 1.3em;
+      border-bottom: 1px solid #4c20b3;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .content .item {
+      margin-bottom: 15px;
+    }
+    .content .item h3 {
+      font-size: 1.1em;
+      margin: 0;
+    }
+    .content .item .subtext {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 5px;
+    }
+    .content .item p {
+      margin: 5px 0;
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 700px) {
+      .main {
+        flex-direction: column;
+      }
+      .sidebar, .content {
+        width: 100%;
+        padding: 0;
+      }
+      .sidebar {
+        border-right: none;
+        border-bottom: 2px solid #4f07f9;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header with name and contact -->
+    <header>
+      <h1>Aarav Prawin</h1>
+      <p class="contact">
+        Email: <a href="mailto:aarav.prawin2023@vitstudent.ac.in">aarav.prawin2023@vitstudent.ac.in</a> |
+        Phone: 6354051585
+      </p>
+    </header>
+    
+    <div class="main">
+      <!-- Left Sidebar: Skills, Technical Info, and Competitive Programming -->
+      <aside class="sidebar">
+        <!-- Skills / Technical Skills Section -->
+        <section>
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Competitive Programming</li>
+            <li>Web Development</li>
+            <li>Machine Learning </li>
+            <li>Pandas & Numpy</li>
+            <li>SQL Database</li>
+          </ul>
+        </section>
+        <!-- Programming Languages -->
+        <section>
+          <h2>Programming Languages</h2>
+          <ul>
+            <li><strong>Skilled:</strong> C++</li>
+            <li><strong>Good:</strong> Java, SQL, JavaScript,Python</li>
+            <li><strong>Familiar:</strong> HTML5, CSS3, React, Node.js, Git</li>
+          </ul>
+        </section>
+        <!-- Competitive Programming Ratings -->
+        <section>
+          <h2>Competitive</h2>
+          <ul>
+            <li>CodeChef: Two Star | Rating: 1520</li>
+            <li>Leetcode: Rating 1708</li>
+          </ul>
+        </section>
+      </aside>
+      
+      <!-- Main Content: Education, Projects, Experience, etc. -->
+      <section class="content">
+        <!-- Education -->
+        <section>
+          <h2>Education</h2>
+          <div class="item">
+            <h3>Vellore Institute of Technology</h3>
+            <p class="subtext">B.Tech. in Computer Science | August 2023 – Present | Chennai, Tamil Nadu</p>
+          </div>
+        </section>
+        
+        <!-- Achievements -->
+        <section>
+          <h2>Achievements</h2>
+          <div class="item">
+            <p>• Achieved world rank #596 in Codechef Starters 170 Contest</p>
+            <p>• Achieved world rank #424 in Codechef Starters 174 Division 3 Contest</p>
+            <p>• Achieved world rank #538 in Leetcode Biweekly 152 Contest</p>
+            <p>• Leetcode – Solved 140+ problems</p>
+          </div>
+        </section>
+        
+        <!-- Projects -->
+        <section>
+          <h2>Projects</h2>
+          <!-- DAO Community -->
+          <p><strong>Image Recommendation System</strong></p>
+          <p>
+            Developed an advanced neural network–based recommendation system to 
+            detect user interests and suggest relevant images. Focused on 
+            implementing user behavior tracking, building a convolutional 
+            neural network for image similarity, and optimizing recommendations 
+            for faster, more accurate results.
+          </p>
+          <!-- C++ Projects -->
+          <div class="item">
+            <h3>PYTHON PROJECTS</h3>
+            <p>• Book Reccomendation System</p>
+            <p>• Made a Model to Quantify food through image processing</p>
+          </div>
+          <!-- InsureFi -->
+        </section>
+        
+        <!-- Experience (if any additional details) -->
+        <section>
+          <h2>Experience</h2>
+          <div class="item">
+            <p><strong>CYSCOM CLUB (2023 – Present)</strong></p>
+          <p>
+            Actively contributed to the management and technical aspects of the club, 
+            including the conduction of events, seminars, and workshops on cybersecurity. 
+            Organized a medical-themed hackathon in collaboration with Yenepoya Medical 
+            College, promoting healthcare innovation through blockchain and data analysis.
+          </p>
+          </div>
+        </section>
+      </section>
+    </div>
+    
+    <!-- Footer with links -->
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #8a56f4;">
+      <p>
+        <a href="mailto:aarav.prawin2023@vitstudent.ac.in">aarav.prawin2023@vitstudent.ac.in</a> |
+        <a href="https://www.codechef.com/users/swift_joy_37" target="_blank">Codechef</a> |
+        <a href="https://leetcode.com/u/Aarav_Prawin" target="_blank">Leetcode</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
