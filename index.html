@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <title>Aarav Prawin – Resume</title>
   <style>
-    /* Base resets */
     body, html {
       margin: 0;
       padding: 0;
       font-family: "Arial", sans-serif;
       line-height: 1.4;
       color: #232324;
+      background-color: #f7f7f7;
     }
     a { color: #5a0aef; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Container */
     .container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
 
-    /* Header */
     header {
       text-align: center;
       padding-bottom: 10px;
@@ -33,6 +34,7 @@
       font-size: 2.5em;
       margin: 0;
       letter-spacing: 1px;
+      color: #333;
     }
     header p.contact {
       margin: 5px 0;
@@ -40,12 +42,28 @@
       color: #555;
     }
 
-    /* Layout: two columns */
+    .summary {
+      margin-bottom: 30px;
+    }
+    .summary h2 {
+      font-size: 1.3em;
+      border-bottom: 1px solid #4c20b3;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #4c20b3;
+    }
+    .summary p {
+      font-size: 0.95em;
+      color: #444;
+      line-height: 1.6;
+    }
+
     .main {
       display: flex;
       gap: 20px;
     }
-    /* Left sidebar */
     .sidebar {
       width: 30%;
       border-right: 2px solid #444;
@@ -61,6 +79,7 @@
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      color: #333;
     }
     .sidebar ul {
       list-style: none;
@@ -69,9 +88,9 @@
     }
     .sidebar li {
       margin-bottom: 5px;
+      color: #444;
     }
 
-    /* Right content area */
     .content {
       width: 70%;
       padding-left: 20px;
@@ -86,6 +105,7 @@
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      color: #4c20b3;
     }
     .content .item {
       margin-bottom: 15px;
@@ -93,19 +113,20 @@
     .content .item h3 {
       font-size: 1.1em;
       margin: 0;
+      color: #333;
     }
     .content .item .subtext {
       font-size: 0.9em;
       color: #777;
       margin-bottom: 5px;
     }
-    .content .item p {
+    .content .item ul {
       margin: 5px 0;
-      font-size: 0.95em;
+      padding-left: 20px;
+      list-style-type: disc;
       color: #444;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 700px) {
       .main {
         flex-direction: column;
@@ -125,7 +146,6 @@
 </head>
 <body>
   <div class="container">
-    <!-- Header with name and contact -->
     <header>
       <h1>Aarav Prawin</h1>
       <p class="contact">
@@ -133,132 +153,128 @@
         Phone: 6354051585
       </p>
     </header>
-    
+
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Self-motivated and impact-driven Computer Science student passionate about building intelligent systems that solve real-world problems.
+        Successfully delivered a solo internship project using LLMs to automate log analysis, boosting audit efficiency by 35%.
+        Proficient in CrewAI, OpenAI APIs, and Scikit-learn for end-to-end AI solutions.
+        Eager to join innovative teams that value curiosity, ownership, and meaningful impact.
+      </p>
+    </section>
+
     <div class="main">
-      <!-- Left Sidebar: Skills, Technical Info, and Competitive Programming -->
       <aside class="sidebar">
-        <!-- Skills / Technical Skills Section -->
         <section>
           <h2>Technical Skills</h2>
           <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Competitive Programming</li>
+            <li>AI & Machine Learning</li>
+            <li>Multi-Agent Systems</li>
             <li>Web Development</li>
-            <li>Machine Learning </li>
-            <li>Pandas & Numpy</li>
-            <li>SQL Database</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Pandas, NumPy, Scikit-learn</li>
+            <li>Prompt Engineering</li>
+            <li>YAML, SQL, MongoDB</li>
           </ul>
         </section>
-        <!-- Programming Languages -->
         <section>
-          <h2>Programming Languages</h2>
+          <h2>Languages</h2>
           <ul>
-            <li><strong>Skilled:</strong> C++</li>
-            <li><strong>Good:</strong> Java, SQL, JavaScript,Python</li>
-            <li><strong>Familiar:</strong> HTML5, CSS3, React, Node.js, Git</li>
+            <li><strong>Proficient:</strong> C++, Python</li>
+            <li><strong>Good:</strong> Java, SQL, JavaScript</li>
+            <li><strong>Familiar:</strong> HTML5, CSS3, React, Git</li>
           </ul>
         </section>
-        <!-- Competitive Programming Ratings -->
         <section>
           <h2>Competitive</h2>
           <ul>
-            <li>CodeChef: Two Star | Rating: 1587</li>
+            <li>CodeChef: 2★ | Rating: 1587</li>
             <li>Leetcode: Rating 1736</li>
           </ul>
         </section>
       </aside>
-      
-      <!-- Main Content: Education, Projects, Experience, etc. -->
+
       <section class="content">
-        <!-- Education -->
         <section>
           <h2>Education</h2>
           <div class="item">
             <h3>Vellore Institute of Technology</h3>
-            <p class="subtext">B.Tech. in Computer Science | August 2023 – Present | Chennai, Tamil Nadu</p>
+            <p class="subtext">B.Tech. in Computer Science | Aug 2023 – Present | Chennai</p>
           </div>
         </section>
-        
-        <!-- Achievements -->
+
+        <section>
+          <h2>Experience</h2>
+          <div class="item">
+            <h3>Python Developer Intern – Cymmetri</h3>
+            <p class="subtext">Jun 2025 – Jul 2025 | Mumbai</p>
+            <ul>
+              <li>Built a production-ready log analysis assistant using CrewAI, OpenAI APIs, and Python</li>
+              <li>Boosted audit efficiency by 35% via intelligent filtering, LLM orchestration, and memory tracing</li>
+              <li>Applied YAML workflows, pandas, and conversational agents for complex log queries</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Web Developer – DAO Club</h3>
+            <p class="subtext">2024 – Present</p>
+            <ul>
+              <li>Contributed to decentralized web apps and smart-contract features</li>
+              <li>Focused on UI/UX improvements and GitHub-based team collaboration</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <div class="item">
+            <h3>Log Analysis Assistant (Cymmetri)</h3>
+            <ul>
+              <li>Real-time log inspection via natural language queries</li>
+              <li>Improved log handling speed by ~35% with agent orchestration and NLP</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>ScrapX – AI Scrap Marketplace</h3>
+            <ul>
+              <li>Computer vision (YOLO) + blockchain + Firebase backend</li>
+              <li>Enabled real-time scrap recognition and secure exchanges</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Image Recognition & Smart Detection</h3>
+            <ul>
+              <li>YOLOv7 + LIDAR drone system for automated trash detection</li>
+              <li>Accelerated detection time by ~28% with optimized segmentation</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Book Recommendation Engine</h3>
+            <ul>
+              <li>Hybrid content + collaborative filter using Scikit-learn</li>
+              <li>Improved recommendation relevance by ~22%</li>
+            </ul>
+          </div>
+        </section>
+
         <section>
           <h2>Achievements</h2>
           <div class="item">
-            <p>• Achieved world rank #596 in Codechef Starters 170 Contest</p>
-            <p>• Achieved world rank #424 in Codechef Starters 174 Division 3 Contest</p>
-            <p>• Achieved world rank #108 in Codechef Starters 190 Division 5 Contest</p>
-            <p>• Achieved world rank #538 in Leetcode Biweekly 152 Contest</p>
-            <p>• Leetcode – Solved 170+ problems</p>
+            <ul>
+              <li>CodeChef Starters 190 Div 5 – Rank 108</li>
+              <li>Leetcode Biweekly 152 – Rank 538</li>
+              <li>Solved 170+ problems on Leetcode</li>
+            </ul>
           </div>
         </section>
-        
-        <!-- Projects -->
-        <!-- Projects -->
-<section>
-  <h2>Projects</h2>
+      </section>
+    </div>
 
-  <!-- Image Recommendation System -->
-  <p><strong>Image Recommendation System</strong></p>
-  <p>
-    Developed an advanced neural network–based recommendation system to 
-    detect user interests and suggest relevant images. Focused on 
-    implementing user behavior tracking, building a convolutional 
-    neural network for image similarity, and optimizing recommendations 
-    for faster, more accurate results.
-  </p>
-
-  <!-- Python Projects -->
-  <div class="item">
-    <h3>PYTHON PROJECTS</h3>
-    <p>• Book Recommendation System</p>
-    <p>• Made a Model to Quantify food through image processing</p>
-  </div>
-
-  <!-- ScrapX Project -->
-  <div class="item">
-    <h3>ScrapX – AI-Powered Scrap Marketplace</h3>
-    <p>
-      Built an intelligent platform for buyers and sellers of scrap materials using 
-      AI, IoT, and blockchain. Implemented a real-time scrap detection system using 
-      computer vision and YOLO, integrated Firebase for backend, and provided secure 
-      transaction and identity verification features.
-    </p>
-  </div>
-</section>
-
-        
-        <!-- Experience (if any additional details) -->
-       <!-- Experience (if any additional details) -->
-<section>
-  <h2>Experience</h2>
-  
-  <div class="item">
-    <p><strong>CYSCOM CLUB (2023 – Present)</strong></p>
-    <p>
-      Actively contributed to the management and technical aspects of the club, 
-      including the conduction of events, seminars, and workshops on cybersecurity. 
-      Organized a medical-themed hackathon in collaboration with Yenepoya Medical 
-      College, promoting healthcare innovation through blockchain and data analysis.
-    </p>
-  </div>
-
-  <div class="item">
-    <p><strong>DAO CLUB – Web Developer (2024 – Present)</strong></p>
-    <p>
-      Joined the DAO Club as a core Web Development member. Contributed to the development 
-      of blockchain-integrated web solutions and participated in weekly sprints focused on 
-      UI/UX optimization and smart contract interaction. Actively collaborated with team members 
-      on GitHub.
-    </p>
-  </div>
-</section>
-
-    
-    <!-- Footer with links -->
-    <footer style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #8a56f4;">
+    <footer style="text-align:center; margin-top:30px; font-size:0.9em; color:#8a56f4;">
       <p>
         <a href="mailto:aarav.prawin2023@vitstudent.ac.in">aarav.prawin2023@vitstudent.ac.in</a> |
-        <a href="https://www.codechef.com/users/glam_cats_09" target="_blank">Codechef</a> |
-        <a href="https://leetcode.com/u/Aarav_Prawin" target="_blank">Leetcode</a>
+        <a href="https://www.codechef.com/users/glam_cats_09" target="_blank">CodeChef</a> |
+        <a href="https://leetcode.com/u/Aarav_Prawin" target="_blank">LeetCode</a>
       </p>
     </footer>
   </div>
